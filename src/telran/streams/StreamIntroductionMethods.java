@@ -30,11 +30,7 @@ static public int[] getRandomArray(int fromInclusive, int toExclusive, int nNumb
 	return new Random().ints(nNumbers, fromInclusive, toExclusive).toArray();
 }
 static public void displayShuffle(int ar[]) {
-	//prints out a given array in shuffled order
-	// example, array: [10, 20, 30,40], possible shuffling printing 30, 10, 40, 20
-	//no sorting
-	//no additional arrays, no any collections, no using standard shuffle method
-	//one code line
+
 	new Random().ints(0,ar.length).distinct().limit(ar.length)
 	.forEach(i -> System.out.print(ar[i] + " "));
 	
